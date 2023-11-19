@@ -9,6 +9,7 @@ const Navbar = () => {
 
   const handleClick = () => {
     setClicked(!clicked);
+    console.log(clicked);
   }
 
   return (
@@ -28,6 +29,9 @@ const Navbar = () => {
       </div>
       <div className="navBurguer">
         <NavBurguer clicked={clicked} handleClick= {handleClick} />
+      </div>
+      <div className= {`initial ${clicked ? 'active' : '' }`}>
+
       </div>
 
 

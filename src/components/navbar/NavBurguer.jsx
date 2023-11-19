@@ -4,7 +4,7 @@ import './navBurguer.css'
 const NavBurguer = (props) => {
     return (
         <div onClick={props.handleClick}
-            className={`icon nav-icon-5 ${props.click ? 'open' : ''}`}
+            className={`icon nav-icon-5 ${props.clicked ? 'open' : ''}`}
         >
             <span></span>
             <span></span>
