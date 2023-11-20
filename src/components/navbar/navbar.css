@@ -11,7 +11,19 @@
 .navbar a {
     color: #000;
     text-decoration: none;
-    margin-right: 5rem;
+    margin-right: 3rem;
+}
+
+.navbar--logo {
+    text-align: center;
+}
+
+.navbar--logo h2 {
+    color: var(--colorPri2);
+}
+
+.navbar--logo span {
+    color: var(--colorSec4);
 }
 
 .navbar--links {
@@ -25,13 +37,17 @@
     transition: all .5s ease;
 }
 
-.navbar--links a {
+/* Links Animation */
+
+
+
+/* .navbar--links a {
 
     color: #fff;
     font-size: 2rem;
     display: block;
 
-}
+} */
 
 .navbar--links.active {
     width: 100%;
@@ -47,12 +63,14 @@
 
 .navbar--links.active a {
     font-size: 2rem;
+    display: block;
     margin-top: 1rem;
-    color: #fff;
+    color: var(--colorSec4);
 }
 
+
 .initial {
-    background-color: #222;
+    background-color: var(--colorPri2);
     position: absolute;
     top: -1000px;
     left: -1000px;
@@ -62,7 +80,7 @@
     transition: all .6s ease;
 }
 
-.initial.active{
+.initial.active {
     border-radius: 0 0 80% 0;
     top: 0;
     left: 0;
@@ -70,13 +88,35 @@
     height: 100%;
 }
 
+
+.navbar--media a {
+    color: var(--colorPri2);
+    width: 30px;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+
+.navbar--media a:hover {
+    color: var(--colorSec4);
+}
+
+
+
+
+
 /* MEDIA QUERIE */
 
 @media (width < 768px) {
-    .navbar--media{
-
+    .navbar--media {
+        display: none;
     }
-    
+
+    .navbar--logo {
+        margin: 0 auto;
+    }
+
+
 }
 
 @media(min-width: 768px) {

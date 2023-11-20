@@ -1,4 +1,3 @@
-import './App.css'
 import RootProvider from './core/providers/RootProvider'
 import HomePage from './pages/homePage/view/HomePage'
 
